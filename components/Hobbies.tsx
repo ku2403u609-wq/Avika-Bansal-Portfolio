@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { HOBBIES } from '../constants';
-import { Theme } from '../types';
+import React from "react";
+import { HOBBIES } from "../constants";
+import { Theme } from "../types";
 
 interface HobbiesProps {
   theme: Theme;
@@ -14,18 +13,30 @@ const Hobbies: React.FC<HobbiesProps> = ({ theme }) => {
         <h2 className="text-xs uppercase tracking-[0.4em] font-medium opacity-50 mb-16">
           Beyond Design
         </h2>
-        
+
         <div className="flex flex-wrap justify-center gap-12 md:gap-20 mb-16">
-          {HOBBIES.map((hobby, index) => (
-            <div key={index} className="flex flex-col items-center group">
-              <div className="mb-4 opacity-40 group-hover:opacity-100 transition-opacity duration-300 scale-125">
-                {hobby.icon}
-              </div>
-              <span className="text-sm tracking-[0.2em] uppercase font-light opacity-60">
-                {hobby.name}
-              </span>
-            </div>
-          ))}
+          {HOBBIES.map((hobby, index) => {
+            const Wrapper = hobby.link ? "a" : "div";
+
+            return (
+              <Wrapper
+                key={index}
+                {...(hobby.link && {
+                  href: hobby.link,
+                  target: "_blank",
+                  rel: "noopener noreferrer"
+                })}
+                className="flex flex-col items-center group cursor-pointer"
+              >
+                <div className="mb-4 opacity-40 group-hover:opacity-100 transition-opacity duration-300 scale-125">
+                  {hobby.icon}
+                </div>
+                <span className="text-sm tracking-[0.2em] uppercase font-light opacity-60 group-hover:opacity-100 transition-opacity">
+                  {hobby.name}
+                </span>
+              </Wrapper>
+            );
+          })}
         </div>
 
         <p className="text-xl md:text-2xl font-serif italic opacity-70">

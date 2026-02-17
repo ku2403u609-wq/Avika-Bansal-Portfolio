@@ -1,4 +1,4 @@
-
+// /Users/suhaanigarg/Downloads/avika-bansal-portfolio (1)/constants.tsx
 import React from 'react';
 import { Project } from './types';
 import { 
@@ -54,8 +54,24 @@ export const SOFTWARE = [
 ];
 
 export const HOBBIES = [
-  { name: "Travelling", icon: <Plane size={20} /> },
-  { name: "Photography", icon: <Camera size={20} /> },
-  { name: "Crochet", icon: <Scissors size={20} /> },
-  { name: "Basketball", icon: <Dribbble size={20} /> }
+  {
+    name: "Travelling",
+    icon: <Plane size={20} />,
+    link: "https://drive.google.com/drive/folders/1NQV_c8HXUyHrRKu5vy_QqbIp5heISpbB?usp=sharing"
+  },
+  {
+    name: "Photography",
+    icon: <Camera size={20} />,
+    link: "https://drive.google.com/drive/folders/1ozifV0naNVz8HfWjSLzBNbOg5SW0xNBM?usp=sharing"
+  },
+  {
+    name: "Crochet",
+    icon: <Scissors size={20} />,
+    link: "https://www.instagram.com/artika.crochet/"
+  },
+  {
+    name: "Basketball",
+    icon: <Dribbble size={20} />,
+    link: "https://drive.google.com/drive/folders/1sxTfpELFrg2oucIvUNd22n07RVCHpzOK?usp=drive_link"
+  }
 ];
