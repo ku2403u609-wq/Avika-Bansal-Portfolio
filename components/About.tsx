@@ -46,6 +46,18 @@ const About: React.FC = () => {
               </p>
             </div>
 
+            {/* Business Link */}
+            <div>
+              <a
+                href="https://www.instagram.com/artika.crochet/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm uppercase tracking-widest opacity-70 hover:opacity-100 transition border-b border-current pb-1"
+              >
+                Visit crochet business →
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-current border-opacity-5 pt-8 gap-8">
           <p className="text-[10px] uppercase tracking-[0.3em] opacity-30">
-            © {new Date().getFullYear()} Avika Bansal — Portfolio V1
+            © {new Date().getFullYear()} Avika Bansal — Portfolio
           </p>
           <button
             onClick={scrollToTop}
