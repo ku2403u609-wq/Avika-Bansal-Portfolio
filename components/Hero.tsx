@@ -69,7 +69,7 @@ const Hero = ({ theme }: HeroProps) => {
             Communication Design Student
           </p>
           <div className="pt-8">
-            <span className="text-sm font-serif italic opacity-50">
+            <span className="text-xl md:text-2xl font-serif italic opacity-75">
               Designing in layers
             </span>
           </div>
