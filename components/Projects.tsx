@@ -25,7 +25,7 @@ const Projects = ({ theme }: ProjectsProps) => {
             Selected Work
           </h2>
           <span className="text-xs uppercase tracking-[0.4em] opacity-40 mb-2">
-            2023 — 2025
+            2024 — 2026
           </span>
         </div>
 
